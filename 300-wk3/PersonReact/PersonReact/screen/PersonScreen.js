@@ -3,15 +3,10 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function PersonScreen({ route, navigation }) {
   const insets = useSafeAreaInsets();
+  console.log(route.params.users);
   return (
     <View>
-      <Text style={{ color: "red" }}>Home Screen</Text>
-      <Button
-        title="Home details"
-        omPress={() => {
-          navigation.navigate("Home");
-        }}
-      />
+      <Text style={{ color: "red" }}>Person Screen</Text>
     </View>
   );
 }
