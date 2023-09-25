@@ -7,6 +7,7 @@ import { theme } from './theme/Theme';
 
 const Stack = createNativeStackNavigator();
 
+
 export default function App() {
   return (
     <SafeAreaProvider>
