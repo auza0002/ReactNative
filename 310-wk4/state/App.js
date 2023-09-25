@@ -14,6 +14,11 @@ export default function App() {
   });
   // setInfo and setUid will trigger a re-render of the UI
 
+  useEffect(() => {});
+  // runs on initial render and every re render
+  useEffect(() => {}, []); // runs on initial render only
+  useEffect(() => {}, [info]); // runs on initial render and when info changes
+
   return (
     <View style={styles.container}>
       <Text>
